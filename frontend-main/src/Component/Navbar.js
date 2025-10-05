@@ -26,7 +26,6 @@ function Navbar() {
 
         <Link to="/rule">Rules</Link>
         <Link to="/contact">Contact Us</Link>
-        <Link to="/team">Team</Link>
 
       </nav>
 

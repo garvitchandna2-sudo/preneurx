@@ -30,13 +30,13 @@ function Footer() {
         </div>
 
        <div className="footer-social flex items-center ">
-  <Link to="https://wa.me/message/DYGTA4MBTTQQA1">
+  <Link to="/">
     <img src={whatsappIcon} alt="WhatsApp" className="h-6 w-6" />
   </Link>
-  <Link to="https://www.instagram.com/preneurx?igsh=MXBtcmE1N21veTI4YQ==">
+  <Link to="/">
     <img src={instagramIcon} alt="Instagram" className="h-6 w-6" />
   </Link>
-<Link to="https://www.linkedin.com/company/preneurx">
+<Link to="/">
     <img src={linkedinIcon} alt="LinkedIn" className="h-6 w-6" />
   </Link>
 </div>

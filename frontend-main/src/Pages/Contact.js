@@ -25,10 +25,10 @@ const ContactUs = () => {
 
     const subject = encodeURIComponent("New Inquiry Form");
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`
+     ` Name: ${name}\nEmail: ${email}\nMessage:\n${message}`
     );
 
-    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=preneurxteam@gmail.com&su=${subject}&body=${body}`;
+    const gmailURL =` https://mail.google.com/mail/?view=cm&fs=1&to=info.preneurx@gmail.com&su=${subject}&body=${body}`;
     window.open(gmailURL, "_blank");
     alert("Gmail window opened. Please complete your message in the Gmail tab.");
     setForm({ name: "", email: "", message: "" }); // reset form
@@ -107,19 +107,17 @@ const ContactUs = () => {
               <h3 className="text-xl font-semibold text-blue-900">Our Office</h3>
               <p className="mt-2 text-sm text-[#333] leading-relaxed">
                 PreneurX <br />
-                Deoria, Uttar Pradesh 274001, India
+                Jaipur, Rajasthan, 303007 , India
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="text-xl font-semibold text-blue-900">Contact Info</h3>
               <p className="mt-2 text-sm text-[#333] leading-relaxed">
-                Phone: +91-6386660600 <br />
-                Email: preneurxteam@gmail.com <br />
-                Website: www.preneurx.in
+                Phone: +91-8684076253<br />
+                Email: garvitchandna2@gmail.com<br />
               </p>
               <a
-                href="https://wa.me/message/DYGTA4MBTTQQA1"
-                target="_blank"
+                href="/contact"
                 title="Chat on WhatsApp"
                 rel="noopener noreferrer"
               >
