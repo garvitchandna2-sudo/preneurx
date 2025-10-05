@@ -1,0 +1,53 @@
+/* Mobile Carousel Styles */
+.mobile-carousel {
+  display: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 6px;
+  background-color:white;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.abc {
+  display: none;
+}
+
+/* Carousel option buttons */
+.carousel-option {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 0px;
+  font-size: 16.5px;
+  
+  margin-right: 10px;
+  cursor: pointer;
+  color: #0e1010;
+  font-family: 'Nunito';
+  
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
+/* ✅ Show only on mobile and add border */
+@media (max-width: 768px) {
+  .abc {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-radius: 0; /* No corners, optional */
+    padding-left: 11px;
+    background-color: #fff;
+  }
+
+  .mobile-carousel {
+    display: flex;
+  }
+}
+

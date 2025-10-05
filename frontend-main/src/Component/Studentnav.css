@@ -1,0 +1,329 @@
+.navbar1 {
+  width: 100%;
+  background: #f5f8fa;
+  overflow-x: auto; /* enable scroll */
+  -ms-overflow-style: none; /* hide scrollbar in IE/Edge */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+.navbar1::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome/Safari */
+}
+
+.nav-links1 {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap; /* prevent wrapping */
+  gap: 20px;
+  padding: 0px 10px;
+  min-width: max-content;
+}
+
+
+
+.nav-links1 a {
+  text-decoration: none;
+  color: #515151;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  flex-shrink: 0; /* prevent shrinking on small screens */
+}
+
+@media (min-width: 769px) {
+  .navbar1 {
+    justify-content: center;
+  }
+
+  .nav-links1 {
+    justify-content: center;
+    flex-wrap: wrap; /* allow wrap on large screens if needed */
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      width: 100%;
+      background: #f5f8fa;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    hr {
+    display: block;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width:opx;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .header1 {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index:5;
+    }
+
+    .logo {
+      height: 22px;
+      padding-top: 4px;
+      width: auto;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .hamburger {
+      width: 35px;
+      height: 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 5px;
+      background: linear-gradient(to right, #083ca0, black);
+    }
+
+    .hamburger span {
+      display: block;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    .dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* updated to flex */
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 90vw;
+  z-index: 999;
+  gap:5px;
+}
+
+    /* .dropdown {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: none;
+      flex-direction: column;
+      min-width: 180px;
+      max-width: 90vw;
+      z-index: 999;
+    } */
+
+    .dropdown a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #083ca0;
+      font-weight: 600;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown a:hover {
+      background: #f0f0f0;
+    }
+
+
+    .dropdown div,
+.dropdown a {
+  cursor: pointer;
+}
+
+    .navbar1 {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .nav-links1 {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links1 a {
+      text-decoration: none;
+      color: #515151;
+      font-size: 22px;
+      font-variant-caps: all-petite-caps;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    .nav-links1 a:hover {
+      background: #f0f0f0;
+            text-decoration: none;
+
+    }
+
+    @media (max-width: 768px) {
+      .navbar1 {
+        overflow-x: auto;
+        padding: 0;
+      }
+
+      .nav-links1 {
+        flex-wrap: nowrap;
+        gap: 15px;
+        min-width: max-content;
+      }
+
+      .nav-links1 a {
+        white-space: nowrap;
+        
+      }
+    }
+
+    .navbar1::-webkit-scrollbar {
+      display: none;
+    }
+
+    .navbar1 {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      position: relative; /* Needed to create stacking context */
+  z-index: 5;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 90%;
+      margin: 50px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .profile-header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-text h3 {
+      margin: 0;
+      font-size: 18px;
+      background: linear-gradient(to right, #083ca0, black);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .profile-text p {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bolder;
+      color: #515151;
+    }
+
+    .upload-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .upload-box textarea {
+      width: 100%;
+      min-height: 100px;
+      max-height: 600px;
+      padding: 10px;
+      resize: none;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow-y: hidden;
+    }
+
+    .post-button, .edit-button, .delete-button {
+      background: linear-gradient(to right, #083ca0, black);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .post-button:hover, .edit-button:hover, .delete-button:hover {
+      background: linear-gradient(to right, #083ca0, #222);
+    }
+
+    .post-display {
+      margin-top: 20px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    .post-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }

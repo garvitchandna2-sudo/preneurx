@@ -1,0 +1,46 @@
+
+
+.header {
+  background: linear-gradient(135deg, #083ca0, black);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.container1 {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  background: linear-gradient(135deg, #083ca0, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+p, li {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+a {
+  color: #083ca0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} 
